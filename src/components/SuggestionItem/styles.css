@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 16px;
+
+    transition: background-color 0.25s;
+}
+
+.container:not(:last-child) hr {
+    margin-top: 8px;
+    opacity: 0.25;
+}
+
+.container:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.food {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 95%;
+
+    font-weight: 700;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.category {
+    opacity: 0.25;
+    
+}
+
+.price {
+    font-weight: 700;
+    color: rgb(23, 182, 23);
+}
